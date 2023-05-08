@@ -17,6 +17,7 @@ public class Player_movement : MonoBehaviour
     }
 
     void Update(){
+        //Moverse a la derecha
         transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded){
@@ -24,7 +25,7 @@ public class Player_movement : MonoBehaviour
             isGrounded = false;
         }
 
-
+        //Caerse fuera del nivel
         if( transform.position.y < 6){
             Destroy(gameObject);
             Debug.Log("te moriste wey");
@@ -39,7 +40,7 @@ public class Player_movement : MonoBehaviour
             }
         }
 
-        //chocar contra enemigo
+        //morir al chocar contra enemigo
         if (other.gameObject.CompareTag("enemy")){
             Destroy(gameObject);
         }
