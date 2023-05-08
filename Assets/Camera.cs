@@ -14,6 +14,15 @@ public class Camera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(player.position.x+10, 15, -10);
+        try
+        {
+            transform.position = new Vector3(player.position.x + 10, 15, -10);
+        }
+        catch (System.Exception)
+        {
+
+            Debug.Log("te moriste wey");
+        }
+        
     }
 }

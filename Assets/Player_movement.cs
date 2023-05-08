@@ -4,46 +4,45 @@ using UnityEngine;
 
 public class Player_movement : MonoBehaviour
 {
-    public float gravity = -50;
-    public Vector2 velocity;
-    public float jumpVelocity = 20;
-    public float groundHeight = 10;
-    public bool isGrounded = false;
-    public float speed = 5;
+    private Rigidbody2D rb;
+    public float moveSpeed = 8;
+    public float jumpSpeed = 7;
+    public bool isGrounded;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    private void Awake(){
+        rb = GetComponent<Rigidbody2D>();
+    }
+    void Start(){
+        isGrounded = false;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        velocity.x = speed;
-        if (isGrounded){
-            if(Input.GetKeyDown(KeyCode.Space)){
-                isGrounded = false;
-                velocity.y = jumpVelocity;
-            }
+    void Update(){
+        transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
+
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded){
+            rb.AddForce(Vector2.up * jumpSpeed * 100);
+            isGrounded = false;
+        }
+
+
+        if( transform.position.y < 6){
+            Destroy(gameObject);
+            Debug.Log("te moriste wey");
         }
     }
 
-    private void FixedUpdate() {
-        Vector2 pos = transform.position;
-
-        pos.x += velocity.x * Time.fixedDeltaTime;
-
-        if(!isGrounded){
-            pos.y += velocity.y * Time.fixedDeltaTime;
-            velocity.y += gravity * Time.fixedDeltaTime;
-
-            if(pos.y <= groundHeight){
-                pos.y = groundHeight;
+    void OnCollisionEnter2D(Collision2D other){
+        //revisar suelo
+        if (other.gameObject.CompareTag("ground")){
+            if(isGrounded == false){
                 isGrounded = true;
             }
         }
 
-        transform.position = pos;
+        //chocar contra enemigo
+        if (other.gameObject.CompareTag("enemy")){
+            Destroy(gameObject);
+        }
     }
+
 }
