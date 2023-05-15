@@ -11,6 +11,9 @@ public class Player_movement : MonoBehaviour
     public int score;
     private float aux_time;
 
+    public GameObject Hit_Box;
+
+
     public GameObject gameOver;
 
     private void Awake(){
@@ -32,8 +35,14 @@ public class Player_movement : MonoBehaviour
             isGrounded = false;
         }
 
+        //Input para atacar
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            StartCoroutine(att());
+        }
+
         //Caerse fuera del nivel
-        if( transform.position.y < 6){
+        if ( transform.position.y < 6){
             Debug.Log("te moriste wey");
             gameOver.SetActive(true);
             Destroy(gameObject);
@@ -63,6 +72,13 @@ public class Player_movement : MonoBehaviour
             gameOver.SetActive(true);
             Destroy(gameObject);
         }
+    }
+
+    IEnumerator att()
+    {
+        Hit_Box.SetActive(true);
+        yield return new WaitForSeconds(0.3f);
+        Hit_Box.SetActive(false);
     }
 
 }
