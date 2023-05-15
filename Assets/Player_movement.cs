@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player_movement : MonoBehaviour
 {
@@ -56,6 +57,17 @@ public class Player_movement : MonoBehaviour
             aux_time = 0;
         }
 
+
+
+
+
+
+
+        //varios
+        if (Input.GetKeyDown(KeyCode.R)){
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+
     }
 
     void OnCollisionEnter2D(Collision2D other){
@@ -72,6 +84,18 @@ public class Player_movement : MonoBehaviour
             gameOver.SetActive(true);
             Destroy(gameObject);
         }
+    }
+    
+    private void OnCollisionExit2D(Collision2D other){
+        //Cuando ya no se esta en el suelo
+        if (other.gameObject.CompareTag("ground")){
+            isGrounded = false;
+        }
+    }
+
+    public void AddScore(int points)
+    {
+        score += points;
     }
 
     IEnumerator att()
