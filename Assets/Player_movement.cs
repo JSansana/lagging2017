@@ -8,18 +8,25 @@ public class Player_movement : MonoBehaviour
     public float moveSpeed = 8;
     public float jumpSpeed = 7;
     public bool isGrounded;
+    public int score;
+    private float aux_time;
+
+    public GameObject gameOver;
 
     private void Awake(){
         rb = GetComponent<Rigidbody2D>();
     }
     void Start(){
         isGrounded = false;
+        score = 0;
+        aux_time = 0;
     }
 
     void Update(){
         //Moverse a la derecha
         transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
 
+        //Input para saltar
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded){
             rb.AddForce(Vector2.up * jumpSpeed * 100);
             isGrounded = false;
@@ -27,9 +34,19 @@ public class Player_movement : MonoBehaviour
 
         //Caerse fuera del nivel
         if( transform.position.y < 6){
-            Destroy(gameObject);
             Debug.Log("te moriste wey");
+            gameOver.SetActive(true);
+            Destroy(gameObject);
         }
+
+        //añadir puntaje cada segundo
+        aux_time += Time.deltaTime;
+        if (aux_time > 1f)
+        {
+            score += 1;
+            aux_time = 0;
+        }
+
     }
 
     void OnCollisionEnter2D(Collision2D other){
@@ -42,6 +59,8 @@ public class Player_movement : MonoBehaviour
 
         //morir al chocar contra enemigo
         if (other.gameObject.CompareTag("enemy")){
+            Debug.Log("te moriste wey");
+            gameOver.SetActive(true);
             Destroy(gameObject);
         }
     }

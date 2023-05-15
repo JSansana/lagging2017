@@ -5,23 +5,24 @@ using UnityEngine;
 public class Camera : MonoBehaviour
 {
     public Transform player;
-    // Start is called before the first frame update
+    private bool flagOnce;
+
     void Start()
     {
-        
+        flagOnce = false;
     }
 
-    // Update is called once per frame
+
     void Update()
     {
-        try
-        {
+        try {
             transform.position = new Vector3(player.position.x + 10, 15, -10);
         }
-        catch (System.Exception)
-        {
-
-            Debug.Log("te moriste wey");
+        catch (System.Exception){
+            if (flagOnce == false){
+                flagOnce = true;
+                Debug.Log("te moriste wey");
+            }
         }
         
     }
