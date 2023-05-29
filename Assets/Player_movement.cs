@@ -58,11 +58,6 @@ public class Player_movement : MonoBehaviour
         }
 
 
-
-
-
-
-
         //varios
         if (Input.GetKeyDown(KeyCode.R)){
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
@@ -78,8 +73,9 @@ public class Player_movement : MonoBehaviour
             }
         }
 
-        //morir al chocar contra enemigo
-        if (other.gameObject.CompareTag("enemy")){
+        //morir al chocar contra enemigo/caja
+        if ((other.gameObject.CompareTag("enemy")) || (other.gameObject.CompareTag("crate")))
+        {
             Debug.Log("te moriste wey");
             gameOver.SetActive(true);
             Destroy(gameObject);
