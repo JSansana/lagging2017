@@ -11,11 +11,14 @@ public class Player_movement : MonoBehaviour
     public bool isGrounded;
     public int score;
     private float aux_time;
+    public bool canAttack = true;
+    public bool activeAttack = false;
 
     public GameObject Hit_Box;
 
 
     public GameObject gameOver;
+    public GameObject GameOverMenu;
 
     private void Awake(){
         rb = GetComponent<Rigidbody2D>();
@@ -37,7 +40,7 @@ public class Player_movement : MonoBehaviour
         }
 
         //Input para atacar
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.F) && canAttack)
         {
             StartCoroutine(att());
         }
@@ -46,10 +49,11 @@ public class Player_movement : MonoBehaviour
         if ( transform.position.y < 6){
             Debug.Log("te moriste wey");
             gameOver.SetActive(true);
+            GameOverMenu.SetActive(true);
             Destroy(gameObject);
         }
 
-        //añadir puntaje cada segundo
+        //aï¿½adir puntaje cada segundo
         aux_time += Time.deltaTime;
         if (aux_time > 1f)
         {
@@ -78,6 +82,7 @@ public class Player_movement : MonoBehaviour
         {
             Debug.Log("te moriste wey");
             gameOver.SetActive(true);
+            GameOverMenu.SetActive(true);
             Destroy(gameObject);
         }
     }
@@ -97,8 +102,13 @@ public class Player_movement : MonoBehaviour
     IEnumerator att()
     {
         Hit_Box.SetActive(true);
+        activeAttack = true;
+        canAttack = false;
         yield return new WaitForSeconds(0.3f);
         Hit_Box.SetActive(false);
+        yield return new WaitForSeconds(0.3f);
+        activeAttack = false;
+        canAttack = true;
     }
 
 }
