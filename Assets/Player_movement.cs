@@ -49,7 +49,7 @@ public class Player_movement : MonoBehaviour
             Destroy(gameObject);
         }
 
-        //añadir puntaje cada segundo
+        //aï¿½adir puntaje cada segundo
         aux_time += Time.deltaTime;
         if (aux_time > 1f)
         {
@@ -74,7 +74,7 @@ public class Player_movement : MonoBehaviour
         }
 
         //morir al chocar contra enemigo/caja
-        if ((other.gameObject.CompareTag("enemy")) || (other.gameObject.CompareTag("crate")))
+        if ((other.gameObject.CompareTag("enemy")) || (other.gameObject.CompareTag("crate"))|| (other.gameObject.CompareTag("police")))
         {
             Debug.Log("te moriste wey");
             gameOver.SetActive(true);
