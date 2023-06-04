@@ -73,7 +73,7 @@ public class Player_movement : MonoBehaviour
         }
 
         //morir al chocar contra enemigo/caja
-        if ((other.gameObject.CompareTag("enemy")) || (other.gameObject.CompareTag("crate")))
+        if ((other.gameObject.CompareTag("enemy")) || (other.gameObject.CompareTag("crate"))|| (other.gameObject.CompareTag("police")))
         {
             Debug.Log("te moriste wey");
             gameOver.SetActive(true);
