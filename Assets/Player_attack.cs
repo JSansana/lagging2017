@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player_attack : MonoBehaviour
 {
-    public GameObject player;
+    public GameObject score;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +22,7 @@ public class Player_attack : MonoBehaviour
         if (other.CompareTag("enemy"))
         {
             Destroy(other.gameObject);
-            player.GetComponent<Player_movement>().AddScore(5);
+            score.GetComponent<Score>().AddScore(5);
         }
     }
 }

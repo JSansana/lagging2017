@@ -9,20 +9,19 @@ public class Player_movement : MonoBehaviour
     public float moveSpeed = 8;
     public float jumpSpeed = 7;
     public bool isGrounded;
-    public int score;
     private float aux_time;
 
     public GameObject Hit_Box;
-
-
     public GameObject gameOver;
+    public GameObject score;
+
 
     private void Awake(){
         rb = GetComponent<Rigidbody2D>();
     }
+
     void Start(){
         isGrounded = false;
-        score = 0;
         aux_time = 0;
     }
 
@@ -49,11 +48,11 @@ public class Player_movement : MonoBehaviour
             Destroy(gameObject);
         }
 
-        //añadir puntaje cada segundo
+        //aÃ±adir puntaje cada segundo
         aux_time += Time.deltaTime;
         if (aux_time > 1f)
         {
-            score += 1;
+            score.GetComponent<Score>().AddScore(1);
             aux_time = 0;
         }
 
@@ -65,7 +64,7 @@ public class Player_movement : MonoBehaviour
 
     }
 
-    void OnCollisionEnter2D(Collision2D other){
+    private void OnCollisionEnter2D(Collision2D other){
         //revisar suelo
         if (other.gameObject.CompareTag("ground")){
             if(isGrounded == false){
@@ -89,9 +88,10 @@ public class Player_movement : MonoBehaviour
         }
     }
 
-    public void AddScore(int points)
-    {
-        score += points;
+    private void OnTriggerEnter2D(Collider2D other) {
+        if (other.gameObject.CompareTag("LevelExit")){
+            SceneManager.LoadScene("Finish_Level");
+        }
     }
 
     IEnumerator att()
