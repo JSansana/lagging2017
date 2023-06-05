@@ -7,21 +7,14 @@ public class MenuFinish : MonoBehaviour
 {   
 
     public string MenuScene;
+    public GameObject score;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+    private void Awake() {
+        score = GameObject.Find("Puntaje");
     }
 
     public void LoadMainMenu(){
-
+        Destroy(score);
         SceneManager.LoadScene(MenuScene);
 
     }
