@@ -10,9 +10,12 @@ public class Player_movement : MonoBehaviour
     public float jumpSpeed = 7;
     public bool isGrounded;
     private float aux_time;
+    public bool canAttack = true;
+    public bool activeAttack = false;
 
     public GameObject Hit_Box;
     public GameObject gameOver;
+    public GameObject GameOverMenu;
     public GameObject score;
 
 
@@ -36,7 +39,7 @@ public class Player_movement : MonoBehaviour
         }
 
         //Input para atacar
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.F) && canAttack)
         {
             StartCoroutine(att());
         }
@@ -45,6 +48,7 @@ public class Player_movement : MonoBehaviour
         if ( transform.position.y < 6){
             Debug.Log("te moriste wey");
             gameOver.SetActive(true);
+            GameOverMenu.SetActive(true);
             Destroy(gameObject);
         }
 
@@ -77,6 +81,7 @@ public class Player_movement : MonoBehaviour
         {
             Debug.Log("te moriste wey");
             gameOver.SetActive(true);
+            GameOverMenu.SetActive(true);
             Destroy(gameObject);
         }
     }
@@ -97,8 +102,12 @@ public class Player_movement : MonoBehaviour
     IEnumerator att()
     {
         Hit_Box.SetActive(true);
+        activeAttack = true;
+        canAttack = false;
         yield return new WaitForSeconds(0.3f);
         Hit_Box.SetActive(false);
+        activeAttack = false;
+        canAttack = true;
     }
 
 }
