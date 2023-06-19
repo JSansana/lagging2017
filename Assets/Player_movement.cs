@@ -62,6 +62,7 @@ public class Player_movement : MonoBehaviour
 
 
         //varios
+        //Reiniciar el nivel
         if (Input.GetKeyDown(KeyCode.R)){
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
@@ -94,6 +95,7 @@ public class Player_movement : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
+        //Cuando llega a la meta
         if (other.gameObject.CompareTag("LevelExit")){
             SceneManager.LoadScene("Finish_Level");
         }

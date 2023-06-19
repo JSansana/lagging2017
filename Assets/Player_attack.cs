@@ -21,6 +21,8 @@ public class Player_attack : MonoBehaviour
     {
         if (other.CompareTag("enemy"))
         {
+
+            other.GetComponent<Box>().Create_fragments(Random.Range(4,7));
             Destroy(other.gameObject);
             score.GetComponent<Score>().AddScore(5);
         }

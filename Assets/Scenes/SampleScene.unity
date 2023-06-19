@@ -560,6 +560,7 @@ GameObject:
   - component: {fileID: 61788215}
   - component: {fileID: 61788214}
   - component: {fileID: 61788213}
+  - component: {fileID: 61788216}
   m_Layer: 0
   m_Name: box (10)
   m_TagString: enemy
@@ -681,6 +682,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &61788216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61788211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bf2a380b2a63d4ba905c2208238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragment: {fileID: 419236078}
 --- !u!1 &86311141
 GameObject:
   m_ObjectHideFlags: 0
@@ -1092,6 +1106,7 @@ GameObject:
   - component: {fileID: 105290180}
   - component: {fileID: 105290182}
   - component: {fileID: 105290181}
+  - component: {fileID: 105290183}
   m_Layer: 0
   m_Name: box
   m_TagString: enemy
@@ -1213,6 +1228,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &105290183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105290178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bf2a380b2a63d4ba905c2208238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragment: {fileID: 419236078}
 --- !u!1 &114859277
 GameObject:
   m_ObjectHideFlags: 0
@@ -2861,6 +2889,7 @@ GameObject:
   - component: {fileID: 319211664}
   - component: {fileID: 319211663}
   - component: {fileID: 319211662}
+  - component: {fileID: 319211665}
   m_Layer: 0
   m_Name: box (1)
   m_TagString: enemy
@@ -2982,6 +3011,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &319211665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319211660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bf2a380b2a63d4ba905c2208238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragment: {fileID: 419236078}
 --- !u!1 &320552132
 GameObject:
   m_ObjectHideFlags: 0
@@ -3127,6 +3169,7 @@ GameObject:
   - component: {fileID: 320966726}
   - component: {fileID: 320966725}
   - component: {fileID: 320966724}
+  - component: {fileID: 320966727}
   m_Layer: 0
   m_Name: box (31)
   m_TagString: enemy
@@ -3248,6 +3291,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &320966727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 320966722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bf2a380b2a63d4ba905c2208238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragment: {fileID: 419236078}
 --- !u!224 &331240458 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8578841756411753193, guid: 7f06597a93d73de48a79b098fe031fe4, type: 3}
@@ -3692,8 +3748,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 1.28, y: 1.28}
+    newSize: {x: 1.28, y: 1.28}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -3742,12 +3798,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.99077123, g: 1, b: 0.2396226, a: 1}
+  m_Sprite: {fileID: 21300000, guid: d31e8369bd2fb4048be8e2f3a5152423, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.28, y: 1.28}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -3761,8 +3817,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 358548246}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.04, y: 0, z: 0}
-  m_LocalScale: {x: 0.79, y: 0.79, z: 0.79}
+  m_LocalPosition: {x: 1.134, y: 0.087, z: 0}
+  m_LocalScale: {x: 0.96999997, y: 0.96999997, z: 0.96999997}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1792011135}
@@ -3780,6 +3836,7 @@ GameObject:
   - component: {fileID: 370793010}
   - component: {fileID: 370793009}
   - component: {fileID: 370793008}
+  - component: {fileID: 370793011}
   m_Layer: 0
   m_Name: box (38)
   m_TagString: enemy
@@ -3901,6 +3958,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &370793011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370793006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bf2a380b2a63d4ba905c2208238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragment: {fileID: 419236078}
+--- !u!1 &419236078 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2412669277188947466, guid: 7749eb9ef4278354ca94d44948b09e88, type: 3}
+  m_PrefabInstance: {fileID: 2412669276791338724}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &419236083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419236078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a31308b008168e842945ac212a0a8e4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &443959853
 GameObject:
   m_ObjectHideFlags: 0
@@ -3913,6 +4000,7 @@ GameObject:
   - component: {fileID: 443959857}
   - component: {fileID: 443959856}
   - component: {fileID: 443959855}
+  - component: {fileID: 443959858}
   m_Layer: 0
   m_Name: box (21)
   m_TagString: enemy
@@ -4034,6 +4122,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &443959858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443959853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bf2a380b2a63d4ba905c2208238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragment: {fileID: 419236078}
 --- !u!1 &446083538
 GameObject:
   m_ObjectHideFlags: 0
@@ -4676,6 +4777,7 @@ GameObject:
   - component: {fileID: 559938252}
   - component: {fileID: 559938251}
   - component: {fileID: 559938250}
+  - component: {fileID: 559938253}
   m_Layer: 0
   m_Name: box (6)
   m_TagString: enemy
@@ -4797,6 +4899,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &559938253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559938248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bf2a380b2a63d4ba905c2208238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragment: {fileID: 419236078}
 --- !u!1 &563848487
 GameObject:
   m_ObjectHideFlags: 0
@@ -4942,6 +5057,7 @@ GameObject:
   - component: {fileID: 572804005}
   - component: {fileID: 572804004}
   - component: {fileID: 572804003}
+  - component: {fileID: 572804006}
   m_Layer: 0
   m_Name: box (32)
   m_TagString: enemy
@@ -5063,6 +5179,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &572804006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572804001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bf2a380b2a63d4ba905c2208238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragment: {fileID: 419236078}
 --- !u!1 &573605159
 GameObject:
   m_ObjectHideFlags: 0
@@ -5873,6 +6002,7 @@ GameObject:
   - component: {fileID: 683307862}
   - component: {fileID: 683307861}
   - component: {fileID: 683307860}
+  - component: {fileID: 683307863}
   m_Layer: 0
   m_Name: box (37)
   m_TagString: enemy
@@ -5994,6 +6124,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &683307863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683307858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bf2a380b2a63d4ba905c2208238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragment: {fileID: 419236078}
 --- !u!1 &690643370
 GameObject:
   m_ObjectHideFlags: 0
@@ -6139,6 +6282,7 @@ GameObject:
   - component: {fileID: 693597231}
   - component: {fileID: 693597230}
   - component: {fileID: 693597229}
+  - component: {fileID: 693597232}
   m_Layer: 0
   m_Name: box (8)
   m_TagString: enemy
@@ -6260,6 +6404,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &693597232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 693597227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bf2a380b2a63d4ba905c2208238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragment: {fileID: 419236078}
 --- !u!1 &701965587
 GameObject:
   m_ObjectHideFlags: 0
@@ -7319,7 +7476,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Press "F" to attack and DESTROY
 
-    white boxes'
+    boxes'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7829,6 +7986,7 @@ GameObject:
   - component: {fileID: 936173241}
   - component: {fileID: 936173240}
   - component: {fileID: 936173239}
+  - component: {fileID: 936173243}
   m_Layer: 0
   m_Name: box (36)
   m_TagString: enemy
@@ -7950,6 +8108,19 @@ Transform:
   m_Father: {fileID: 907895190}
   m_RootOrder: 85
   m_LocalEulerAnglesHint: {x: 3.698, y: 1.639, z: -0.154}
+--- !u!114 &936173243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936173238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bf2a380b2a63d4ba905c2208238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragment: {fileID: 419236078}
 --- !u!1 &970802950
 GameObject:
   m_ObjectHideFlags: 0
@@ -7962,6 +8133,7 @@ GameObject:
   - component: {fileID: 970802954}
   - component: {fileID: 970802953}
   - component: {fileID: 970802952}
+  - component: {fileID: 970802955}
   m_Layer: 0
   m_Name: box (5)
   m_TagString: enemy
@@ -8083,6 +8255,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &970802955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970802950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bf2a380b2a63d4ba905c2208238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragment: {fileID: 419236078}
 --- !u!1 &990810685
 GameObject:
   m_ObjectHideFlags: 0
@@ -8163,6 +8348,7 @@ GameObject:
   - component: {fileID: 992955619}
   - component: {fileID: 992955618}
   - component: {fileID: 992955617}
+  - component: {fileID: 992955620}
   m_Layer: 0
   m_Name: box (30)
   m_TagString: enemy
@@ -8284,6 +8470,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &992955620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992955615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bf2a380b2a63d4ba905c2208238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragment: {fileID: 419236078}
 --- !u!1 &1020384439
 GameObject:
   m_ObjectHideFlags: 0
@@ -8562,6 +8761,7 @@ GameObject:
   - component: {fileID: 1035500387}
   - component: {fileID: 1035500386}
   - component: {fileID: 1035500385}
+  - component: {fileID: 1035500388}
   m_Layer: 0
   m_Name: box (41)
   m_TagString: enemy
@@ -8683,6 +8883,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1035500388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1035500383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bf2a380b2a63d4ba905c2208238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragment: {fileID: 419236078}
 --- !u!1 &1047532240
 GameObject:
   m_ObjectHideFlags: 0
@@ -8961,6 +9174,7 @@ GameObject:
   - component: {fileID: 1086204513}
   - component: {fileID: 1086204512}
   - component: {fileID: 1086204511}
+  - component: {fileID: 1086204514}
   m_Layer: 0
   m_Name: box (39)
   m_TagString: enemy
@@ -9082,6 +9296,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1086204514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086204509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bf2a380b2a63d4ba905c2208238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragment: {fileID: 419236078}
 --- !u!1 &1125683127
 GameObject:
   m_ObjectHideFlags: 0
@@ -9094,6 +9321,7 @@ GameObject:
   - component: {fileID: 1125683130}
   - component: {fileID: 1125683129}
   - component: {fileID: 1125683128}
+  - component: {fileID: 1125683132}
   m_Layer: 0
   m_Name: box (44)
   m_TagString: enemy
@@ -9215,6 +9443,19 @@ Transform:
   m_Father: {fileID: 907895190}
   m_RootOrder: 84
   m_LocalEulerAnglesHint: {x: 3.698, y: 1.639, z: -0.154}
+--- !u!114 &1125683132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125683127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bf2a380b2a63d4ba905c2208238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragment: {fileID: 419236078}
 --- !u!1 &1135685902
 GameObject:
   m_ObjectHideFlags: 0
@@ -9493,6 +9734,7 @@ GameObject:
   - component: {fileID: 1157219472}
   - component: {fileID: 1157219471}
   - component: {fileID: 1157219470}
+  - component: {fileID: 1157219474}
   m_Layer: 0
   m_Name: box (42)
   m_TagString: enemy
@@ -9614,6 +9856,19 @@ Transform:
   m_Father: {fileID: 907895190}
   m_RootOrder: 80
   m_LocalEulerAnglesHint: {x: 3.698, y: 1.639, z: -0.154}
+--- !u!114 &1157219474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1157219469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bf2a380b2a63d4ba905c2208238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragment: {fileID: 419236078}
 --- !u!1 &1159413973
 GameObject:
   m_ObjectHideFlags: 0
@@ -10025,6 +10280,7 @@ GameObject:
   - component: {fileID: 1186991939}
   - component: {fileID: 1186991938}
   - component: {fileID: 1186991937}
+  - component: {fileID: 1186991940}
   m_Layer: 0
   m_Name: box (20)
   m_TagString: enemy
@@ -10146,6 +10402,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1186991940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186991935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bf2a380b2a63d4ba905c2208238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragment: {fileID: 419236078}
 --- !u!1 &1191450743
 GameObject:
   m_ObjectHideFlags: 0
@@ -10158,6 +10427,7 @@ GameObject:
   - component: {fileID: 1191450747}
   - component: {fileID: 1191450746}
   - component: {fileID: 1191450745}
+  - component: {fileID: 1191450748}
   m_Layer: 0
   m_Name: box (7)
   m_TagString: enemy
@@ -10279,6 +10549,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1191450748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1191450743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bf2a380b2a63d4ba905c2208238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragment: {fileID: 419236078}
 --- !u!1001 &1213607931
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10863,6 +11146,7 @@ GameObject:
   - component: {fileID: 1250306920}
   - component: {fileID: 1250306919}
   - component: {fileID: 1250306918}
+  - component: {fileID: 1250306921}
   m_Layer: 0
   m_Name: box (13)
   m_TagString: enemy
@@ -10984,6 +11268,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1250306921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1250306916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bf2a380b2a63d4ba905c2208238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragment: {fileID: 419236078}
 --- !u!1 &1308789997
 GameObject:
   m_ObjectHideFlags: 0
@@ -11164,6 +11461,7 @@ GameObject:
   - component: {fileID: 1372288045}
   - component: {fileID: 1372288044}
   - component: {fileID: 1372288043}
+  - component: {fileID: 1372288046}
   m_Layer: 0
   m_Name: box (14)
   m_TagString: enemy
@@ -11285,6 +11583,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1372288046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372288041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bf2a380b2a63d4ba905c2208238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragment: {fileID: 419236078}
 --- !u!1 &1389006792
 GameObject:
   m_ObjectHideFlags: 0
@@ -11297,6 +11608,7 @@ GameObject:
   - component: {fileID: 1389006795}
   - component: {fileID: 1389006794}
   - component: {fileID: 1389006793}
+  - component: {fileID: 1389006797}
   m_Layer: 0
   m_Name: box (33)
   m_TagString: enemy
@@ -11418,6 +11730,19 @@ Transform:
   m_Father: {fileID: 907895190}
   m_RootOrder: 81
   m_LocalEulerAnglesHint: {x: 3.698, y: 1.639, z: -0.154}
+--- !u!114 &1389006797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389006792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bf2a380b2a63d4ba905c2208238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragment: {fileID: 419236078}
 --- !u!1 &1416290752
 GameObject:
   m_ObjectHideFlags: 0
@@ -11430,6 +11755,7 @@ GameObject:
   - component: {fileID: 1416290756}
   - component: {fileID: 1416290755}
   - component: {fileID: 1416290754}
+  - component: {fileID: 1416290757}
   m_Layer: 0
   m_Name: box (26)
   m_TagString: enemy
@@ -11551,6 +11877,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1416290757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416290752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bf2a380b2a63d4ba905c2208238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragment: {fileID: 419236078}
 --- !u!1 &1418717420
 GameObject:
   m_ObjectHideFlags: 0
@@ -11563,6 +11902,7 @@ GameObject:
   - component: {fileID: 1418717424}
   - component: {fileID: 1418717423}
   - component: {fileID: 1418717422}
+  - component: {fileID: 1418717425}
   m_Layer: 0
   m_Name: box (24)
   m_TagString: enemy
@@ -11684,6 +12024,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1418717425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418717420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bf2a380b2a63d4ba905c2208238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragment: {fileID: 419236078}
 --- !u!1 &1422813433
 GameObject:
   m_ObjectHideFlags: 0
@@ -11829,6 +12182,7 @@ GameObject:
   - component: {fileID: 1433234972}
   - component: {fileID: 1433234971}
   - component: {fileID: 1433234970}
+  - component: {fileID: 1433234974}
   m_Layer: 0
   m_Name: box (34)
   m_TagString: enemy
@@ -11950,6 +12304,19 @@ Transform:
   m_Father: {fileID: 907895190}
   m_RootOrder: 82
   m_LocalEulerAnglesHint: {x: 3.698, y: 1.639, z: -0.154}
+--- !u!114 &1433234974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1433234969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bf2a380b2a63d4ba905c2208238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragment: {fileID: 419236078}
 --- !u!1 &1446945189
 GameObject:
   m_ObjectHideFlags: 0
@@ -11962,6 +12329,7 @@ GameObject:
   - component: {fileID: 1446945192}
   - component: {fileID: 1446945191}
   - component: {fileID: 1446945190}
+  - component: {fileID: 1446945194}
   m_Layer: 0
   m_Name: box (37)
   m_TagString: enemy
@@ -12083,6 +12451,19 @@ Transform:
   m_Father: {fileID: 907895190}
   m_RootOrder: 74
   m_LocalEulerAnglesHint: {x: 3.698, y: 1.639, z: -0.154}
+--- !u!114 &1446945194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446945189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bf2a380b2a63d4ba905c2208238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragment: {fileID: 419236078}
 --- !u!1 &1456575291
 GameObject:
   m_ObjectHideFlags: 0
@@ -12898,6 +13279,7 @@ GameObject:
   - component: {fileID: 1541910519}
   - component: {fileID: 1541910518}
   - component: {fileID: 1541910517}
+  - component: {fileID: 1541910520}
   m_Layer: 0
   m_Name: box (27)
   m_TagString: enemy
@@ -13019,6 +13401,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1541910520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541910515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bf2a380b2a63d4ba905c2208238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragment: {fileID: 419236078}
 --- !u!1 &1544418832
 GameObject:
   m_ObjectHideFlags: 0
@@ -13164,6 +13559,7 @@ GameObject:
   - component: {fileID: 1548449066}
   - component: {fileID: 1548449065}
   - component: {fileID: 1548449064}
+  - component: {fileID: 1548449067}
   m_Layer: 0
   m_Name: box (19)
   m_TagString: enemy
@@ -13285,6 +13681,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1548449067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548449062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bf2a380b2a63d4ba905c2208238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragment: {fileID: 419236078}
 --- !u!1 &1559353976
 GameObject:
   m_ObjectHideFlags: 0
@@ -13297,6 +13706,7 @@ GameObject:
   - component: {fileID: 1559353979}
   - component: {fileID: 1559353978}
   - component: {fileID: 1559353977}
+  - component: {fileID: 1559353981}
   m_Layer: 0
   m_Name: box (38)
   m_TagString: enemy
@@ -13418,6 +13828,19 @@ Transform:
   m_Father: {fileID: 907895190}
   m_RootOrder: 75
   m_LocalEulerAnglesHint: {x: 3.698, y: 1.639, z: -0.154}
+--- !u!114 &1559353981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559353976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bf2a380b2a63d4ba905c2208238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragment: {fileID: 419236078}
 --- !u!1001 &1570576279
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13756,6 +14179,7 @@ GameObject:
   - component: {fileID: 1623225845}
   - component: {fileID: 1623225844}
   - component: {fileID: 1623225843}
+  - component: {fileID: 1623225847}
   m_Layer: 0
   m_Name: box (43)
   m_TagString: enemy
@@ -13877,6 +14301,19 @@ Transform:
   m_Father: {fileID: 907895190}
   m_RootOrder: 83
   m_LocalEulerAnglesHint: {x: 3.698, y: 1.639, z: -0.154}
+--- !u!114 &1623225847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623225842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bf2a380b2a63d4ba905c2208238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragment: {fileID: 419236078}
 --- !u!1 &1639660842
 GameObject:
   m_ObjectHideFlags: 0
@@ -14022,6 +14459,7 @@ GameObject:
   - component: {fileID: 1641432544}
   - component: {fileID: 1641432543}
   - component: {fileID: 1641432542}
+  - component: {fileID: 1641432545}
   m_Layer: 0
   m_Name: box (36)
   m_TagString: enemy
@@ -14143,6 +14581,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1641432545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1641432540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bf2a380b2a63d4ba905c2208238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragment: {fileID: 419236078}
 --- !u!1 &1649840743
 GameObject:
   m_ObjectHideFlags: 0
@@ -14155,6 +14606,7 @@ GameObject:
   - component: {fileID: 1649840747}
   - component: {fileID: 1649840746}
   - component: {fileID: 1649840745}
+  - component: {fileID: 1649840748}
   m_Layer: 0
   m_Name: box (18)
   m_TagString: enemy
@@ -14276,6 +14728,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1649840748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649840743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bf2a380b2a63d4ba905c2208238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragment: {fileID: 419236078}
 --- !u!1 &1672192449
 GameObject:
   m_ObjectHideFlags: 0
@@ -14288,6 +14753,7 @@ GameObject:
   - component: {fileID: 1672192452}
   - component: {fileID: 1672192451}
   - component: {fileID: 1672192450}
+  - component: {fileID: 1672192454}
   m_Layer: 0
   m_Name: box (40)
   m_TagString: enemy
@@ -14409,6 +14875,19 @@ Transform:
   m_Father: {fileID: 907895190}
   m_RootOrder: 77
   m_LocalEulerAnglesHint: {x: 3.45, y: 1.756, z: 89.947}
+--- !u!114 &1672192454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1672192449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bf2a380b2a63d4ba905c2208238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragment: {fileID: 419236078}
 --- !u!1 &1674499965
 GameObject:
   m_ObjectHideFlags: 0
@@ -14421,6 +14900,7 @@ GameObject:
   - component: {fileID: 1674499968}
   - component: {fileID: 1674499967}
   - component: {fileID: 1674499966}
+  - component: {fileID: 1674499970}
   m_Layer: 0
   m_Name: box (41)
   m_TagString: enemy
@@ -14542,6 +15022,19 @@ Transform:
   m_Father: {fileID: 907895190}
   m_RootOrder: 78
   m_LocalEulerAnglesHint: {x: 3.45, y: 1.756, z: 89.947}
+--- !u!114 &1674499970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1674499965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bf2a380b2a63d4ba905c2208238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragment: {fileID: 419236078}
 --- !u!1 &1696896610
 GameObject:
   m_ObjectHideFlags: 0
@@ -14554,6 +15047,7 @@ GameObject:
   - component: {fileID: 1696896614}
   - component: {fileID: 1696896613}
   - component: {fileID: 1696896612}
+  - component: {fileID: 1696896615}
   m_Layer: 0
   m_Name: box (25)
   m_TagString: enemy
@@ -14675,6 +15169,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1696896615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696896610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bf2a380b2a63d4ba905c2208238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragment: {fileID: 419236078}
 --- !u!1 &1719150820
 GameObject:
   m_ObjectHideFlags: 0
@@ -14883,6 +15390,7 @@ GameObject:
   - component: {fileID: 1744645414}
   - component: {fileID: 1744645413}
   - component: {fileID: 1744645412}
+  - component: {fileID: 1744645415}
   m_Layer: 0
   m_Name: box (35)
   m_TagString: enemy
@@ -15004,6 +15512,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1744645415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744645410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bf2a380b2a63d4ba905c2208238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragment: {fileID: 419236078}
 --- !u!1 &1759428915
 GameObject:
   m_ObjectHideFlags: 0
@@ -16124,6 +16645,7 @@ GameObject:
   - component: {fileID: 1879634302}
   - component: {fileID: 1879634301}
   - component: {fileID: 1879634300}
+  - component: {fileID: 1879634304}
   m_Layer: 0
   m_Name: box (39)
   m_TagString: enemy
@@ -16245,6 +16767,19 @@ Transform:
   m_Father: {fileID: 907895190}
   m_RootOrder: 76
   m_LocalEulerAnglesHint: {x: 3.327, y: 1.64, z: -0.154}
+--- !u!114 &1879634304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879634299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bf2a380b2a63d4ba905c2208238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragment: {fileID: 419236078}
 --- !u!1 &1889225622
 GameObject:
   m_ObjectHideFlags: 0
@@ -16257,6 +16792,7 @@ GameObject:
   - component: {fileID: 1889225626}
   - component: {fileID: 1889225625}
   - component: {fileID: 1889225624}
+  - component: {fileID: 1889225627}
   m_Layer: 0
   m_Name: box (4)
   m_TagString: enemy
@@ -16378,6 +16914,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1889225627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889225622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bf2a380b2a63d4ba905c2208238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragment: {fileID: 419236078}
 --- !u!1 &1902209081
 GameObject:
   m_ObjectHideFlags: 0
@@ -16789,6 +17338,7 @@ GameObject:
   - component: {fileID: 1936532189}
   - component: {fileID: 1936532188}
   - component: {fileID: 1936532187}
+  - component: {fileID: 1936532190}
   m_Layer: 0
   m_Name: box (42)
   m_TagString: enemy
@@ -16910,6 +17460,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1936532190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936532185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bf2a380b2a63d4ba905c2208238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragment: {fileID: 419236078}
 --- !u!1 &1938831269
 GameObject:
   m_ObjectHideFlags: 0
@@ -16922,6 +17485,7 @@ GameObject:
   - component: {fileID: 1938831273}
   - component: {fileID: 1938831272}
   - component: {fileID: 1938831271}
+  - component: {fileID: 1938831274}
   m_Layer: 0
   m_Name: box (34)
   m_TagString: enemy
@@ -17043,6 +17607,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1938831274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938831269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bf2a380b2a63d4ba905c2208238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragment: {fileID: 419236078}
 --- !u!1 &1956243094
 GameObject:
   m_ObjectHideFlags: 0
@@ -17188,6 +17765,7 @@ GameObject:
   - component: {fileID: 1986879518}
   - component: {fileID: 1986879517}
   - component: {fileID: 1986879516}
+  - component: {fileID: 1986879519}
   m_Layer: 0
   m_Name: box (22)
   m_TagString: enemy
@@ -17309,6 +17887,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1986879519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1986879514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bf2a380b2a63d4ba905c2208238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragment: {fileID: 419236078}
 --- !u!1 &1989000055
 GameObject:
   m_ObjectHideFlags: 0
@@ -17321,6 +17912,7 @@ GameObject:
   - component: {fileID: 1989000059}
   - component: {fileID: 1989000058}
   - component: {fileID: 1989000057}
+  - component: {fileID: 1989000060}
   m_Layer: 0
   m_Name: box (16)
   m_TagString: enemy
@@ -17442,6 +18034,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1989000060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989000055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bf2a380b2a63d4ba905c2208238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragment: {fileID: 419236078}
 --- !u!1 &1997180654
 GameObject:
   m_ObjectHideFlags: 0
@@ -17454,6 +18059,7 @@ GameObject:
   - component: {fileID: 1997180658}
   - component: {fileID: 1997180657}
   - component: {fileID: 1997180656}
+  - component: {fileID: 1997180659}
   m_Layer: 0
   m_Name: box (40)
   m_TagString: enemy
@@ -17575,6 +18181,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1997180659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997180654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bf2a380b2a63d4ba905c2208238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragment: {fileID: 419236078}
 --- !u!1 &2013796701
 GameObject:
   m_ObjectHideFlags: 0
@@ -17587,6 +18206,7 @@ GameObject:
   - component: {fileID: 2013796705}
   - component: {fileID: 2013796704}
   - component: {fileID: 2013796703}
+  - component: {fileID: 2013796706}
   m_Layer: 0
   m_Name: box (11)
   m_TagString: enemy
@@ -17708,6 +18328,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2013796706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013796701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bf2a380b2a63d4ba905c2208238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragment: {fileID: 419236078}
 --- !u!1 &2019765370
 GameObject:
   m_ObjectHideFlags: 0
@@ -17853,6 +18486,7 @@ GameObject:
   - component: {fileID: 2029923366}
   - component: {fileID: 2029923365}
   - component: {fileID: 2029923364}
+  - component: {fileID: 2029923367}
   m_Layer: 0
   m_Name: box (17)
   m_TagString: enemy
@@ -17974,6 +18608,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2029923367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2029923362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bf2a380b2a63d4ba905c2208238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragment: {fileID: 419236078}
 --- !u!224 &2043292682 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8578841756411753193, guid: 7f06597a93d73de48a79b098fe031fe4, type: 3}
@@ -18390,6 +19037,7 @@ GameObject:
   - component: {fileID: 2099494974}
   - component: {fileID: 2099494973}
   - component: {fileID: 2099494972}
+  - component: {fileID: 2099494975}
   m_Layer: 0
   m_Name: box (3)
   m_TagString: enemy
@@ -18511,6 +19159,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2099494975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2099494970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bf2a380b2a63d4ba905c2208238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragment: {fileID: 419236078}
 --- !u!1 &2130333480
 GameObject:
   m_ObjectHideFlags: 0
@@ -18773,3 +19434,72 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f06597a93d73de48a79b098fe031fe4, type: 3}
+--- !u!1001 &2412669276791338724
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2412669277188947466, guid: 7749eb9ef4278354ca94d44948b09e88, type: 3}
+      propertyPath: m_Name
+      value: box_fragment
+      objectReference: {fileID: 0}
+    - target: {fileID: 2412669277188947466, guid: 7749eb9ef4278354ca94d44948b09e88, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2412669277188947476, guid: 7749eb9ef4278354ca94d44948b09e88, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2412669277188947476, guid: 7749eb9ef4278354ca94d44948b09e88, type: 3}
+      propertyPath: m_GravityScale
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2412669277188947478, guid: 7749eb9ef4278354ca94d44948b09e88, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2412669277188947478, guid: 7749eb9ef4278354ca94d44948b09e88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -57.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2412669277188947478, guid: 7749eb9ef4278354ca94d44948b09e88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 76.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2412669277188947478, guid: 7749eb9ef4278354ca94d44948b09e88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2412669277188947478, guid: 7749eb9ef4278354ca94d44948b09e88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2412669277188947478, guid: 7749eb9ef4278354ca94d44948b09e88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2412669277188947478, guid: 7749eb9ef4278354ca94d44948b09e88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2412669277188947478, guid: 7749eb9ef4278354ca94d44948b09e88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2412669277188947478, guid: 7749eb9ef4278354ca94d44948b09e88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2412669277188947478, guid: 7749eb9ef4278354ca94d44948b09e88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2412669277188947478, guid: 7749eb9ef4278354ca94d44948b09e88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7749eb9ef4278354ca94d44948b09e88, type: 3}
