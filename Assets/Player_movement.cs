@@ -7,20 +7,24 @@ public class Player_movement : MonoBehaviour
 {
     private Rigidbody2D rb;
     public float moveSpeed = 8;
+    public float maxSpeed = 15;
     public float jumpSpeed = 7;
     public bool isGrounded;
     private float aux_time;
     public bool canAttack = true;
     public bool activeAttack = false;
+    private Quaternion initialRotation;
 
     public GameObject Hit_Box;
     public GameObject gameOver;
     public GameObject GameOverMenu;
     public GameObject score;
+    public GameObject Music;
 
 
     private void Awake(){
         rb = GetComponent<Rigidbody2D>();
+        initialRotation = transform.rotation;
     }
 
     void Start(){
@@ -29,6 +33,7 @@ public class Player_movement : MonoBehaviour
     }
 
     void Update(){
+
         //Moverse a la derecha
         transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
 
@@ -47,6 +52,7 @@ public class Player_movement : MonoBehaviour
         //Caerse fuera del nivel
         if ( transform.position.y < 6){
             Debug.Log("te moriste wey");
+            Music.GetComponent<AudioSource>().Stop();
             gameOver.SetActive(true);
             GameOverMenu.SetActive(true);
             Destroy(gameObject);
@@ -60,7 +66,39 @@ public class Player_movement : MonoBehaviour
             aux_time = 0;
         }
 
+        //rotacion de jugador respecto a superficies
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 1f);
 
+        if (hit.collider != null)
+        {
+            Vector2 surfaceNormal = hit.normal;
+
+            float angle = Vector2.Angle(transform.up, surfaceNormal);
+
+            if (angle <= 45 && isGrounded)
+            {
+                Quaternion targetRotation = Quaternion.FromToRotation(transform.up, surfaceNormal) * transform.rotation;
+                transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, 10f * Time.deltaTime);
+            }
+        }
+
+        if(!isGrounded)
+        {
+            transform.rotation = Quaternion.Slerp(transform.rotation, initialRotation, 10f * Time.deltaTime);
+        }
+
+        //velocidad de jugador
+        if (moveSpeed < maxSpeed)
+        {
+            moveSpeed += 0.5f * Time.deltaTime;
+        }
+
+        if (moveSpeed > maxSpeed)
+        {
+            moveSpeed = maxSpeed;
+        }
+        
+    
         //varios
         //Reiniciar el nivel
         if (Input.GetKeyDown(KeyCode.R)){
@@ -81,6 +119,7 @@ public class Player_movement : MonoBehaviour
         if ((other.gameObject.CompareTag("enemy")) || (other.gameObject.CompareTag("crate"))|| (other.gameObject.CompareTag("police")))
         {
             Debug.Log("te moriste wey");
+            Music.GetComponent<AudioSource>().Stop();
             gameOver.SetActive(true);
             GameOverMenu.SetActive(true);
             Destroy(gameObject);

@@ -9,6 +9,8 @@ public class MenuJuego : MonoBehaviour
     public string SampleScene;
     public string MenuScene;
     public GameObject Player;
+    public GameObject Score;
+    public GameObject Music;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +26,8 @@ public class MenuJuego : MonoBehaviour
 
 
     public void RestartGame(){
+
+        Destroy(Score);
         Player.GetComponent<Pause>().Resume();
         Player.GetComponent<Pause>().Paused = false;
         SceneManager.LoadScene(SampleScene);
@@ -39,7 +43,9 @@ public class MenuJuego : MonoBehaviour
 
     public void LoadMainMenu(){
 
+        Destroy(Score);
         Player.GetComponent<Pause>().Resume();
+        Music.GetComponent<AudioSource>().Stop();
         Player.GetComponent<Pause>().Paused = false;
         SceneManager.LoadScene(MenuScene);
 

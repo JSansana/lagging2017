@@ -17,6 +17,7 @@ public class GameOverMenu : MonoBehaviour
 
     public void LoadMainMenu(){
 
+        Destroy(score);
         SceneManager.LoadScene(MenuScene);
 
     }

@@ -645,7 +645,7 @@ GameObject:
   - component: {fileID: 61788214}
   - component: {fileID: 61788213}
   - component: {fileID: 61788216}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: box (10)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -791,7 +791,7 @@ GameObject:
   - component: {fileID: 86311145}
   - component: {fileID: 86311144}
   - component: {fileID: 86311143}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: crate (16)
   m_TagString: crate
   m_Icon: {fileID: 0}
@@ -924,7 +924,7 @@ GameObject:
   - component: {fileID: 95967136}
   - component: {fileID: 95967135}
   - component: {fileID: 95967134}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: crate (28)
   m_TagString: crate
   m_Icon: {fileID: 0}
@@ -1191,7 +1191,7 @@ GameObject:
   - component: {fileID: 105290182}
   - component: {fileID: 105290181}
   - component: {fileID: 105290183}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: box
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -1736,7 +1736,7 @@ GameObject:
   - component: {fileID: 136357273}
   - component: {fileID: 136357272}
   - component: {fileID: 136357271}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: crate (25)
   m_TagString: crate
   m_Icon: {fileID: 0}
@@ -1998,7 +1998,7 @@ GameObject:
   - component: {fileID: 194463392}
   - component: {fileID: 194463391}
   - component: {fileID: 194463390}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: crate (22)
   m_TagString: crate
   m_Icon: {fileID: 0}
@@ -2387,7 +2387,7 @@ GameObject:
   - component: {fileID: 238531503}
   - component: {fileID: 238531502}
   - component: {fileID: 238531501}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: crate (11)
   m_TagString: crate
   m_Icon: {fileID: 0}
@@ -2924,7 +2924,7 @@ GameObject:
   - component: {fileID: 285846644}
   - component: {fileID: 285846643}
   - component: {fileID: 285846642}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: crate (15)
   m_TagString: crate
   m_Icon: {fileID: 0}
@@ -3058,7 +3058,7 @@ GameObject:
   - component: {fileID: 319211663}
   - component: {fileID: 319211662}
   - component: {fileID: 319211665}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: box (1)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -3204,7 +3204,7 @@ GameObject:
   - component: {fileID: 320552136}
   - component: {fileID: 320552135}
   - component: {fileID: 320552134}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: crate (29)
   m_TagString: crate
   m_Icon: {fileID: 0}
@@ -3338,7 +3338,7 @@ GameObject:
   - component: {fileID: 320966725}
   - component: {fileID: 320966724}
   - component: {fileID: 320966727}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: box (31)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -3512,6 +3512,8 @@ MonoBehaviour:
   SampleScene: SampleScene
   MenuScene: MainMenu
   Player: {fileID: 1792011133}
+  Score: {fileID: 833256828}
+  Music: {fileID: 1843919584}
 --- !u!114 &338056499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3609,7 +3611,7 @@ GameObject:
   - component: {fileID: 341610423}
   - component: {fileID: 341610422}
   - component: {fileID: 341610421}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Policia (4)
   m_TagString: police
   m_Icon: {fileID: 0}
@@ -3963,7 +3965,7 @@ GameObject:
   - component: {fileID: 358548249}
   - component: {fileID: 358548248}
   - component: {fileID: 358548247}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Hit_Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4089,7 +4091,7 @@ GameObject:
   - component: {fileID: 370793009}
   - component: {fileID: 370793008}
   - component: {fileID: 370793011}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: box (38)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -4253,7 +4255,7 @@ GameObject:
   - component: {fileID: 443959856}
   - component: {fileID: 443959855}
   - component: {fileID: 443959858}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: box (21)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -4665,7 +4667,7 @@ GameObject:
   - component: {fileID: 492957957}
   - component: {fileID: 492957956}
   - component: {fileID: 492957955}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: crate (18)
   m_TagString: crate
   m_Icon: {fileID: 0}
@@ -4897,7 +4899,7 @@ GameObject:
   - component: {fileID: 538100756}
   - component: {fileID: 538100755}
   - component: {fileID: 538100754}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: crate (34)
   m_TagString: crate
   m_Icon: {fileID: 0}
@@ -5031,7 +5033,7 @@ GameObject:
   - component: {fileID: 559938251}
   - component: {fileID: 559938250}
   - component: {fileID: 559938253}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: box (6)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -5211,7 +5213,7 @@ GameObject:
   - component: {fileID: 563848491}
   - component: {fileID: 563848490}
   - component: {fileID: 563848489}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: crate (23)
   m_TagString: crate
   m_Icon: {fileID: 0}
@@ -5345,7 +5347,7 @@ GameObject:
   - component: {fileID: 572804004}
   - component: {fileID: 572804003}
   - component: {fileID: 572804006}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: box (32)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -5890,7 +5892,7 @@ GameObject:
   - component: {fileID: 626230612}
   - component: {fileID: 626230611}
   - component: {fileID: 626230610}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: crate (31)
   m_TagString: crate
   m_Icon: {fileID: 0}
@@ -6023,7 +6025,7 @@ GameObject:
   - component: {fileID: 645013789}
   - component: {fileID: 645013788}
   - component: {fileID: 645013787}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: crate (19)
   m_TagString: crate
   m_Icon: {fileID: 0}
@@ -6156,7 +6158,7 @@ GameObject:
   - component: {fileID: 654956537}
   - component: {fileID: 654956536}
   - component: {fileID: 654956535}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: crate (13)
   m_TagString: crate
   m_Icon: {fileID: 0}
@@ -6290,7 +6292,7 @@ GameObject:
   - component: {fileID: 683307861}
   - component: {fileID: 683307860}
   - component: {fileID: 683307863}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: box (37)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -6570,7 +6572,7 @@ GameObject:
   - component: {fileID: 693597230}
   - component: {fileID: 693597229}
   - component: {fileID: 693597232}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: box (8)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -7116,7 +7118,7 @@ GameObject:
   - component: {fileID: 737138900}
   - component: {fileID: 737138899}
   - component: {fileID: 737138898}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: crate (17)
   m_TagString: crate
   m_Icon: {fileID: 0}
@@ -7249,7 +7251,7 @@ GameObject:
   - component: {fileID: 757878632}
   - component: {fileID: 757878631}
   - component: {fileID: 757878630}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: crate (2)
   m_TagString: crate
   m_Icon: {fileID: 0}
@@ -7889,7 +7891,7 @@ GameObject:
   - component: {fileID: 897047880}
   - component: {fileID: 897047879}
   - component: {fileID: 897047878}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: crate (10)
   m_TagString: crate
   m_Icon: {fileID: 0}
@@ -8022,7 +8024,7 @@ GameObject:
   - component: {fileID: 905641022}
   - component: {fileID: 905641021}
   - component: {fileID: 905641020}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: crate (5)
   m_TagString: crate
   m_Icon: {fileID: 0}
@@ -8152,7 +8154,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 907895190}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: obstaculos
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -8274,7 +8276,7 @@ GameObject:
   - component: {fileID: 936173240}
   - component: {fileID: 936173239}
   - component: {fileID: 936173243}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: box (36)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -8421,7 +8423,7 @@ GameObject:
   - component: {fileID: 970802953}
   - component: {fileID: 970802952}
   - component: {fileID: 970802955}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: box (5)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -8636,7 +8638,7 @@ GameObject:
   - component: {fileID: 992955618}
   - component: {fileID: 992955617}
   - component: {fileID: 992955620}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: box (30)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -8782,7 +8784,7 @@ GameObject:
   - component: {fileID: 1020384443}
   - component: {fileID: 1020384442}
   - component: {fileID: 1020384441}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: crate
   m_TagString: crate
   m_Icon: {fileID: 0}
@@ -9049,7 +9051,7 @@ GameObject:
   - component: {fileID: 1035500386}
   - component: {fileID: 1035500385}
   - component: {fileID: 1035500388}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: box (41)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -9328,7 +9330,7 @@ GameObject:
   - component: {fileID: 1070751989}
   - component: {fileID: 1070751988}
   - component: {fileID: 1070751987}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: crate (30)
   m_TagString: crate
   m_Icon: {fileID: 0}
@@ -9462,7 +9464,7 @@ GameObject:
   - component: {fileID: 1086204512}
   - component: {fileID: 1086204511}
   - component: {fileID: 1086204514}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: box (39)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -9609,7 +9611,7 @@ GameObject:
   - component: {fileID: 1125683129}
   - component: {fileID: 1125683128}
   - component: {fileID: 1125683132}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: box (44)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -9888,7 +9890,7 @@ GameObject:
   - component: {fileID: 1146301047}
   - component: {fileID: 1146301046}
   - component: {fileID: 1146301045}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: crate (3)
   m_TagString: crate
   m_Icon: {fileID: 0}
@@ -10022,7 +10024,7 @@ GameObject:
   - component: {fileID: 1157219471}
   - component: {fileID: 1157219470}
   - component: {fileID: 1157219474}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: box (42)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -10168,7 +10170,7 @@ GameObject:
   - component: {fileID: 1159413977}
   - component: {fileID: 1159413976}
   - component: {fileID: 1159413975}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: crate (12)
   m_TagString: crate
   m_Icon: {fileID: 0}
@@ -10503,7 +10505,7 @@ GameObject:
   - component: {fileID: 1177235383}
   - component: {fileID: 1177235382}
   - component: {fileID: 1177235381}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: crate (9)
   m_TagString: crate
   m_Icon: {fileID: 0}
@@ -10636,7 +10638,7 @@ GameObject:
   - component: {fileID: 1179472790}
   - component: {fileID: 1179472789}
   - component: {fileID: 1179472788}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: crate (6)
   m_TagString: crate
   m_Icon: {fileID: 0}
@@ -10770,7 +10772,7 @@ GameObject:
   - component: {fileID: 1186991938}
   - component: {fileID: 1186991937}
   - component: {fileID: 1186991940}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: box (20)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -10917,7 +10919,7 @@ GameObject:
   - component: {fileID: 1191450746}
   - component: {fileID: 1191450745}
   - component: {fileID: 1191450748}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: box (7)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -11276,7 +11278,7 @@ GameObject:
   - component: {fileID: 1225890728}
   - component: {fileID: 1225890727}
   - component: {fileID: 1225890726}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: crate (32)
   m_TagString: crate
   m_Icon: {fileID: 0}
@@ -11582,7 +11584,7 @@ GameObject:
   - component: {fileID: 1233855911}
   - component: {fileID: 1233855910}
   - component: {fileID: 1233855909}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Policia (5)
   m_TagString: police
   m_Icon: {fileID: 0}
@@ -11720,7 +11722,7 @@ GameObject:
   - component: {fileID: 1250306919}
   - component: {fileID: 1250306918}
   - component: {fileID: 1250306921}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: box (13)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -11866,7 +11868,7 @@ GameObject:
   - component: {fileID: 1308790001}
   - component: {fileID: 1308790000}
   - component: {fileID: 1308789999}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: crate (8)
   m_TagString: crate
   m_Icon: {fileID: 0}
@@ -12119,7 +12121,7 @@ GameObject:
   - component: {fileID: 1372288044}
   - component: {fileID: 1372288043}
   - component: {fileID: 1372288046}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: box (14)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -12266,7 +12268,7 @@ GameObject:
   - component: {fileID: 1389006794}
   - component: {fileID: 1389006793}
   - component: {fileID: 1389006797}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: box (33)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -12413,7 +12415,7 @@ GameObject:
   - component: {fileID: 1416290755}
   - component: {fileID: 1416290754}
   - component: {fileID: 1416290757}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: box (26)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -12560,7 +12562,7 @@ GameObject:
   - component: {fileID: 1418717423}
   - component: {fileID: 1418717422}
   - component: {fileID: 1418717425}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: box (24)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -12706,7 +12708,7 @@ GameObject:
   - component: {fileID: 1422813437}
   - component: {fileID: 1422813436}
   - component: {fileID: 1422813435}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: crate (35)
   m_TagString: crate
   m_Icon: {fileID: 0}
@@ -12840,7 +12842,7 @@ GameObject:
   - component: {fileID: 1433234971}
   - component: {fileID: 1433234970}
   - component: {fileID: 1433234974}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: box (34)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -12987,7 +12989,7 @@ GameObject:
   - component: {fileID: 1446945191}
   - component: {fileID: 1446945190}
   - component: {fileID: 1446945194}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: box (37)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -13399,7 +13401,7 @@ GameObject:
   - component: {fileID: 1491626172}
   - component: {fileID: 1491626171}
   - component: {fileID: 1491626170}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: crate (33)
   m_TagString: crate
   m_Icon: {fileID: 0}
@@ -13532,7 +13534,7 @@ GameObject:
   - component: {fileID: 1529236256}
   - component: {fileID: 1529236255}
   - component: {fileID: 1529236254}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: crate (24)
   m_TagString: crate
   m_Icon: {fileID: 0}
@@ -13665,7 +13667,7 @@ GameObject:
   - component: {fileID: 1530252303}
   - component: {fileID: 1530252302}
   - component: {fileID: 1530252301}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: crate (30)
   m_TagString: crate
   m_Icon: {fileID: 0}
@@ -13883,7 +13885,7 @@ GameObject:
   - component: {fileID: 1534759686}
   - component: {fileID: 1534759689}
   - component: {fileID: 1534759688}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Policia (2)
   m_TagString: police
   m_Icon: {fileID: 0}
@@ -14021,7 +14023,7 @@ GameObject:
   - component: {fileID: 1541910518}
   - component: {fileID: 1541910517}
   - component: {fileID: 1541910520}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: box (27)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -14301,7 +14303,7 @@ GameObject:
   - component: {fileID: 1548449065}
   - component: {fileID: 1548449064}
   - component: {fileID: 1548449067}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: box (19)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -14448,7 +14450,7 @@ GameObject:
   - component: {fileID: 1559353978}
   - component: {fileID: 1559353977}
   - component: {fileID: 1559353981}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: box (38)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -14921,7 +14923,7 @@ GameObject:
   - component: {fileID: 1623225844}
   - component: {fileID: 1623225843}
   - component: {fileID: 1623225847}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: box (43)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -15067,7 +15069,7 @@ GameObject:
   - component: {fileID: 1639660846}
   - component: {fileID: 1639660845}
   - component: {fileID: 1639660844}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: crate (26)
   m_TagString: crate
   m_Icon: {fileID: 0}
@@ -15201,7 +15203,7 @@ GameObject:
   - component: {fileID: 1641432543}
   - component: {fileID: 1641432542}
   - component: {fileID: 1641432545}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: box (36)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -15348,7 +15350,7 @@ GameObject:
   - component: {fileID: 1649840746}
   - component: {fileID: 1649840745}
   - component: {fileID: 1649840748}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: box (18)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -15495,7 +15497,7 @@ GameObject:
   - component: {fileID: 1672192451}
   - component: {fileID: 1672192450}
   - component: {fileID: 1672192454}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: box (40)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -15642,7 +15644,7 @@ GameObject:
   - component: {fileID: 1674499967}
   - component: {fileID: 1674499966}
   - component: {fileID: 1674499970}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: box (41)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -15873,7 +15875,7 @@ GameObject:
   - component: {fileID: 1696896613}
   - component: {fileID: 1696896612}
   - component: {fileID: 1696896615}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: box (25)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -16216,7 +16218,7 @@ GameObject:
   - component: {fileID: 1744645413}
   - component: {fileID: 1744645412}
   - component: {fileID: 1744645415}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: box (35)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -16363,7 +16365,7 @@ GameObject:
   - component: {fileID: 1759428919}
   - component: {fileID: 1759428918}
   - component: {fileID: 1759428917}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Policia (3)
   m_TagString: police
   m_Icon: {fileID: 0}
@@ -16880,7 +16882,7 @@ GameObject:
   - component: {fileID: 1792011137}
   - component: {fileID: 1792011138}
   - component: {fileID: 1792011140}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16967,7 +16969,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e07f80a41f1509b478879f9be0a484f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 15
+  moveSpeed: 8
+  maxSpeed: 15
   jumpSpeed: 7
   isGrounded: 0
   canAttack: 1
@@ -16976,6 +16979,7 @@ MonoBehaviour:
   gameOver: {fileID: 798214701}
   GameOverMenu: {fileID: 28576002}
   score: {fileID: 833256828}
+  Music: {fileID: 1843919584}
 --- !u!50 &1792011137
 Rigidbody2D:
   serializedVersion: 4
@@ -17037,6 +17041,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MenuJuego: {fileID: 338056497}
   Player: {fileID: 1792011133}
+  Music: {fileID: 1843919584}
   Paused: 0
 --- !u!95 &1792011140
 Animator:
@@ -17204,7 +17209,7 @@ GameObject:
   - component: {fileID: 1818142401}
   - component: {fileID: 1818142400}
   - component: {fileID: 1818142399}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: crate (20)
   m_TagString: crate
   m_Icon: {fileID: 0}
@@ -17337,7 +17342,7 @@ GameObject:
   - component: {fileID: 1838254614}
   - component: {fileID: 1838254613}
   - component: {fileID: 1838254612}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: crate (1)
   m_TagString: crate
   m_Icon: {fileID: 0}
@@ -17458,6 +17463,148 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1843919584
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1843919586}
+  - component: {fileID: 1843919585}
+  - component: {fileID: 1843919589}
+  m_Layer: 0
+  m_Name: Music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1843919585
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843919584}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: e354bbf76413ac44eb4d9935e53b50f9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1843919586
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843919584}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 16.9876, y: 23.806448, z: -0.6627364}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1843919589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843919584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e2287390210e344492c864760d91774, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loopStartTime: 10.97
 --- !u!1 &1879634299
 GameObject:
   m_ObjectHideFlags: 0
@@ -17471,7 +17618,7 @@ GameObject:
   - component: {fileID: 1879634301}
   - component: {fileID: 1879634300}
   - component: {fileID: 1879634304}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: box (39)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -17618,7 +17765,7 @@ GameObject:
   - component: {fileID: 1889225625}
   - component: {fileID: 1889225624}
   - component: {fileID: 1889225627}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: box (4)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -17897,7 +18044,7 @@ GameObject:
   - component: {fileID: 1919439113}
   - component: {fileID: 1919439112}
   - component: {fileID: 1919439111}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: crate (7)
   m_TagString: crate
   m_Icon: {fileID: 0}
@@ -18164,7 +18311,7 @@ GameObject:
   - component: {fileID: 1936532188}
   - component: {fileID: 1936532187}
   - component: {fileID: 1936532190}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: box (42)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -18311,7 +18458,7 @@ GameObject:
   - component: {fileID: 1938831272}
   - component: {fileID: 1938831271}
   - component: {fileID: 1938831274}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: box (34)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -18591,7 +18738,7 @@ GameObject:
   - component: {fileID: 1986879517}
   - component: {fileID: 1986879516}
   - component: {fileID: 1986879519}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: box (22)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -18738,7 +18885,7 @@ GameObject:
   - component: {fileID: 1989000058}
   - component: {fileID: 1989000057}
   - component: {fileID: 1989000060}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: box (16)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -18885,7 +19032,7 @@ GameObject:
   - component: {fileID: 1997180657}
   - component: {fileID: 1997180656}
   - component: {fileID: 1997180659}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: box (40)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -19032,7 +19179,7 @@ GameObject:
   - component: {fileID: 2013796704}
   - component: {fileID: 2013796703}
   - component: {fileID: 2013796706}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: box (11)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -19279,7 +19426,7 @@ GameObject:
   - component: {fileID: 2019765374}
   - component: {fileID: 2019765373}
   - component: {fileID: 2019765372}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: crate (27)
   m_TagString: crate
   m_Icon: {fileID: 0}
@@ -19413,7 +19560,7 @@ GameObject:
   - component: {fileID: 2029923365}
   - component: {fileID: 2029923364}
   - component: {fileID: 2029923367}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: box (17)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -19564,7 +19711,7 @@ GameObject:
   - component: {fileID: 2052000899}
   - component: {fileID: 2052000898}
   - component: {fileID: 2052000897}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: crate (14)
   m_TagString: crate
   m_Icon: {fileID: 0}
@@ -19830,7 +19977,7 @@ GameObject:
   - component: {fileID: 2092320839}
   - component: {fileID: 2092320838}
   - component: {fileID: 2092320837}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: crate (4)
   m_TagString: crate
   m_Icon: {fileID: 0}
@@ -19964,7 +20111,7 @@ GameObject:
   - component: {fileID: 2099494973}
   - component: {fileID: 2099494972}
   - component: {fileID: 2099494975}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: box (3)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -20110,7 +20257,7 @@ GameObject:
   - component: {fileID: 2130333484}
   - component: {fileID: 2130333483}
   - component: {fileID: 2130333482}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: crate (21)
   m_TagString: crate
   m_Icon: {fileID: 0}
