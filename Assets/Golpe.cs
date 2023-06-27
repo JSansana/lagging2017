@@ -17,6 +17,7 @@ public class Golpe : MonoBehaviour
     void Update()
     {
         if (Input.GetKey(KeyCode.E)) {
+            
             gameObject.SetActive(true);
         }
     }

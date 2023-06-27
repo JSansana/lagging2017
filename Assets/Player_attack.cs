@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Player_attack : MonoBehaviour
 {
+    
     public GameObject score;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -19,9 +21,11 @@ public class Player_attack : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
+       
+        
         if (other.CompareTag("enemy"))
         {
-
+            
             other.GetComponent<Box>().Create_fragments(Random.Range(4,7));
             Destroy(other.gameObject);
             score.GetComponent<Score>().AddScore(5);

@@ -14,6 +14,7 @@ public class Player_movement : MonoBehaviour
     public bool canAttack = true;
     public bool activeAttack = false;
     private Quaternion initialRotation;
+    public AudioSource punch;
 
     public GameObject Hit_Box;
     public GameObject gameOver;
@@ -46,6 +47,7 @@ public class Player_movement : MonoBehaviour
         //Input para atacar
         if (Input.GetKeyDown(KeyCode.F) && canAttack)
         {
+            punch.Play();
             StartCoroutine(att());
         }
 

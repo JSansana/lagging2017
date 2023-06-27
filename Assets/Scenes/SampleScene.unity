@@ -242,7 +242,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 12.343997, y: -11.1}
+  m_AnchoredPosition: {x: 12.44, y: -6.37}
   m_SizeDelta: {x: 22.288, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &12063037
@@ -2145,7 +2145,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 195920151}
   m_LocalRotation: {x: 0.008727755, y: -0.000017827819, z: 0.0020425757, w: 0.9999598}
-  m_LocalPosition: {x: 0, y: 0, z: 10.01}
+  m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2154,7 +2154,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 1, y: 0, z: 0.234}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 75.76, y: -8.06}
+  m_AnchoredPosition: {x: 74.4, y: -6.6}
   m_SizeDelta: {x: 21.995, y: 4.8186}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &195920153
@@ -2177,7 +2177,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You must JUMP over YELLOW PATROLS
+  m_text: You must JUMP over POLICE PATROLS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2240,7 +2240,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 1.347228, w: 0}
+  m_margin: {x: 0, y: -0.10869074, z: 1.347228, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -7740,7 +7740,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -29.62, y: -10.5}
+  m_AnchoredPosition: {x: -35.55, y: -10.32}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &834262247
@@ -7828,7 +7828,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 1.347228, w: 0}
+  m_margin: {x: 0, y: -3.613329, z: 1.347228, w: 5.9281178}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -11434,7 +11434,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -8.53, y: -11.99}
+  m_AnchoredPosition: {x: -5.84, y: -6.96}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1227042400
@@ -16882,6 +16882,7 @@ GameObject:
   - component: {fileID: 1792011137}
   - component: {fileID: 1792011138}
   - component: {fileID: 1792011140}
+  - component: {fileID: 1792011141}
   m_Layer: 2
   m_Name: Player
   m_TagString: Untagged
@@ -16975,6 +16976,7 @@ MonoBehaviour:
   isGrounded: 0
   canAttack: 1
   activeAttack: 0
+  punch: {fileID: 1792011141}
   Hit_Box: {fileID: 358548246}
   gameOver: {fileID: 798214701}
   GameOverMenu: {fileID: 28576002}
@@ -17064,6 +17066,102 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!82 &1792011141
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792011133}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 86be1a0d3642e6a4491c975d65ad3f4a, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1803280880
 GameObject:
   m_ObjectHideFlags: 0
@@ -18619,7 +18717,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1956243094}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 543.7, y: 6.3, z: 0}
+  m_LocalPosition: {x: 545.1, y: 6.47, z: 0}
   m_LocalScale: {x: 12.742437, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19859,7 +19957,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2063367504}
   m_LocalRotation: {x: -0, y: -0, z: 0.14848065, w: 0.9889153}
-  m_LocalPosition: {x: 529.4, y: 2.7, z: 0}
+  m_LocalPosition: {x: 531.47, y: 3.53, z: 0}
   m_LocalScale: {x: 10, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

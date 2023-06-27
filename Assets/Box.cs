@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Box : MonoBehaviour
 {
+    
     public GameObject fragment;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +21,7 @@ public class Box : MonoBehaviour
 
     private void OnDestroy()
     {
+        
         //Create_fragments(4);
     }
 
@@ -34,5 +37,7 @@ public class Box : MonoBehaviour
             rb.AddForce(direc);
             Destroy(frag, 5);
         }
+        
+        
     }
 }
