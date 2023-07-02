@@ -47,7 +47,7 @@ public class Player_movement : MonoBehaviour
         //Input para atacar
         if (Input.GetKeyDown(KeyCode.F) && canAttack)
         {
-            punch.Play();
+            //punch.Play();
             StartCoroutine(att());
         }
 

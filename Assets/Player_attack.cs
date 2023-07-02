@@ -6,6 +6,7 @@ public class Player_attack : MonoBehaviour
 {
     
     public GameObject score;
+    public AudioSource punch;
     
     // Start is called before the first frame update
     void Start()
@@ -25,7 +26,7 @@ public class Player_attack : MonoBehaviour
         
         if (other.CompareTag("enemy"))
         {
-            
+            punch.Play();
             other.GetComponent<Box>().Create_fragments(Random.Range(4,7));
             Destroy(other.gameObject);
             score.GetComponent<Score>().AddScore(5);

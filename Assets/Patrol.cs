@@ -11,12 +11,15 @@ public class Patrol : MonoBehaviour
     private Vector3 leftTargetPos;
     private Vector3 rightTargetPos;
     private bool movingRight = true;
+    SpriteRenderer spr;
 
     private void Start()
     {
         startPos = transform.position;
         leftTargetPos = startPos - Vector3.right * patrolDistance;
         rightTargetPos = startPos + Vector3.right * patrolDistance;
+        spr = GetComponent<SpriteRenderer>();
+        spr.flipX = true;
     }
 
     private void Update()
@@ -32,6 +35,7 @@ public class Patrol : MonoBehaviour
         {
             // Change the direction of movement
             movingRight = !movingRight;
+            spr.flipX = !spr.flipX;
         }
     }
 }
